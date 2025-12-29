@@ -10,8 +10,8 @@ import bundleAudioWorkletPlugin from 'vite-plugin-bundle-audioworklet';
 import tailwind from '@astrojs/tailwind';
 import AstroPWA from '@vite-pwa/astro';
 
-const site = `https://strudel.cc/`; // root url without a path
-const base = '/'; // base path of the strudel site
+const site = `https://k4ran909.github.io`; // root url without a path
+const base = '/NeuroRAVE'; // base path of the strudel site
 const baseNoTrailing = base.endsWith('/') ? base.slice(0, -1) : base;
 
 // this rehype plugin fixes relative links
@@ -98,10 +98,10 @@ export default defineConfig({
       },
       manifest: {
         includeAssets: ['favicon.ico', 'icons/apple-icon-180.png'],
-        name: 'Strudel REPL',
-        short_name: 'Strudel',
+        name: 'Neuro RAVE',
+        short_name: 'Neuro RAVE',
         description:
-          'Strudel is a music live coding environment for the browser, porting the TidalCycles pattern language to JavaScript.',
+          'Neuro RAVE is a music live coding environment for the browser, porting the TidalCycles pattern language to JavaScript.',
         theme_color: '#222222',
         icons: [
           {
