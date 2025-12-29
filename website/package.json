@@ -1,7 +1,7 @@
 {
   "name": "@strudel/website",
   "type": "module",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "private": true,
   "main": "electron/main.cjs",
   "productName": "Neuro RAVE",
@@ -37,6 +37,7 @@
     "@strudel/hydra": "workspace:*",
     "@strudel/midi": "workspace:*",
     "@strudel/mini": "workspace:*",
+    "@strudel/mondo": "workspace:*",
     "@strudel/motion": "workspace:*",
     "@strudel/mqtt": "workspace:*",
     "@strudel/osc": "workspace:*",
@@ -46,7 +47,6 @@
     "@strudel/tonal": "workspace:*",
     "@strudel/transpiler": "workspace:*",
     "@strudel/webaudio": "workspace:*",
-    "@strudel/mondo": "workspace:*",
     "@strudel/xen": "workspace:*",
     "@supabase/supabase-js": "^2.48.1",
     "@tailwindcss/forms": "^0.5.10",
@@ -60,6 +60,9 @@
     "astro": "^5.1.9",
     "claviature": "^0.1.0",
     "date-fns": "^4.1.0",
+    "electron-log": "^5.4.3",
+    "electron-serve": "^1.3.0",
+    "electron-updater": "^6.6.2",
     "hs2js": "0.1.0",
     "nanoid": "^5.0.9",
     "nanostores": "^0.11.3",
@@ -72,17 +75,16 @@
     "rehype-urls": "^1.2.0",
     "remark-toc": "^9.0.0",
     "tailwindcss": "^3.4.17",
-    "worker-timers": "^8.0.13",
-    "electron-serve": "^1.3.0"
+    "worker-timers": "^8.0.13"
   },
   "devDependencies": {
     "@vite-pwa/astro": "^0.5.0",
+    "electron": "^29.1.0",
+    "electron-builder": "^24.13.3",
     "html-escaper": "^3.0.3",
     "sharp": "^0.33.5",
-    "workbox-window": "^7.3.0",
     "vite-plugin-bundle-audioworklet": "workspace:*",
-    "electron": "^29.1.0",
-    "electron-builder": "^24.13.3"
+    "workbox-window": "^7.3.0"
   },
   "build": {
     "appId": "com.neurorave.app",
@@ -98,7 +100,14 @@
     "win": {
       "target": "nsis",
       "icon": "public/icons/icon.ico"
-    }
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "k4ran909",
+        "repo": "NeuroRAVE"
+      }
+    ]
   },
   "engines": {
     "node": ">=18.0.0"
