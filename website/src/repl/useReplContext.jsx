@@ -181,7 +181,7 @@ export function useReplContext() {
 
   const setDocumentTitle = (code) => {
     const meta = getMetadata(code);
-    document.title = (meta.title ? `${meta.title} - ` : '') + 'Neuro RAVE REPL';
+    document.title = (meta.title ? `${meta.title} - ` : '') + 'Neuro RAVE';
   };
 
   const handleTogglePlay = async () => {

@@ -31,6 +31,9 @@ module.exports = {
         gutterForeground: 'var(--gutterForeground)',
         gutterBorder: 'var(--gutterBorder)',
         lineHighlight: 'var(--lineHighlight)',
+        primary: 'var(--primary)',
+        'glass-bg': 'var(--glass-bg)',
+        'glass-border': 'var(--glass-border)',
       },
       spacing: {
         'app-height': 'var(--app-height)',
