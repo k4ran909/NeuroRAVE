@@ -57,6 +57,7 @@ export const SIDEBAR: Sidebar = {
     Presentation: [
       { text: 'What is Neuro rave?', link: 'workshop/getting-started' },
       { text: 'Showcase', link: 'intro/showcase' },
+      { text: 'Song Collection', link: 'songs' },
       { text: 'Blog', link: 'blog' },
       /* { text: 'Community Bakery', link: 'bakery' }, */
     ],

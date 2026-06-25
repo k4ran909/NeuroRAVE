@@ -1,0 +1,47 @@
+---
+import HeadCommon from '../components/HeadCommon.astro';
+import Header from '../components/Header/Header.astro';
+import LeftSidebar from '../components/LeftSidebar/LeftSidebar.astro';
+import PageContent from '../components/PageContent/PageContent.astro';
+import RightSidebar from '../components/RightSidebar/RightSidebar.astro';
+import { SongCollection } from '../repl/components/SongCollection.jsx';
+
+const currentPage = Astro.url.pathname;
+---
+
+<html dir={'ltr'} lang={'en'} class="initial dark">
+  <head>
+    <HeadCommon />
+    <title>🎵 NeuroRAVE Song Collection</title>
+  </head>
+
+  <body class="h-app-height text-gray-50 bg-background">
+    <div class="w-full h-full space-y-4 flex flex-col">
+      <header class="max-w-full fixed top-0 w-full z-[100]">
+        <Header currentPage={currentPage} />
+      </header>
+      <main class="relative pt-16">
+        <div class="h-full top-0 overflow-auto min-w-[300px] flex xl:justify-center pr-4 pl-4 md:pl-[300px] xl:pl-0">
+          <aside title="Site Navigation" class="w-[300px] px-6 left-0 hidden md:block fixed h-full">
+            <LeftSidebar currentPage={currentPage} />
+          </aside>
+          <PageContent>
+            <h1>Song Collection</h1>
+            <p>
+              Songs created with NeuroRAVE by the community, pulled live from the
+              <a href={`https://github.com/k4ran909/neurorave-songs-collection`} target="_blank" rel="noreferrer"
+                >neurorave-songs-collection</a
+              > repo. Add a <code>.js</code> song to that repo and it shows up here automatically. Click <strong
+                >Open in NeuroRAVE</strong
+              > to load any song straight into the editor.
+            </p>
+            <SongCollection client:only="react" />
+          </PageContent>
+          <aside class="fixed right-0 h-full overflow-auto pr-4 pl-0 pb-16 hidden xl:block" title="Table of Contents">
+            <RightSidebar headings={[]} />
+          </aside>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
