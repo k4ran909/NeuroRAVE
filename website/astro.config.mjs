@@ -136,6 +136,17 @@ export default defineConfig({
   base,
   vite: {
     plugins: [bundleAudioWorkletPlugin()],
+    // dev-server equivalent of the Netlify /cdn/* proxy (see netlify.toml),
+    // so default samples load from our own origin during `astro dev` too
+    server: {
+      proxy: {
+        '/cdn': {
+          target: 'https://strudel.b-cdn.net',
+          changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/cdn/, ''),
+        },
+      },
+    },
     ssr: {
       // Example: Force a broken package to skip SSR processing, if needed
       // external: ['fraction.js'], // https://github.com/infusion/Fraction.js/issues/51

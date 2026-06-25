@@ -8,7 +8,8 @@ import { evaluate } from '@strudel/transpiler';
 
 const { BASE_URL } = import.meta.env;
 const baseNoTrailing = BASE_URL.endsWith('/') ? BASE_URL.slice(0, -1) : BASE_URL;
-const baseCDN = 'https://strudel.b-cdn.net';
+// served from our own domain via a Netlify proxy rewrite (see netlify.toml: /cdn/* -> upstream sample CDN)
+const baseCDN = `${baseNoTrailing}/cdn`;
 
 export async function prebake() {
   // https://archive.org/details/SalamanderGrandPianoV3

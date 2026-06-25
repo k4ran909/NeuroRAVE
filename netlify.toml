@@ -5,3 +5,12 @@
 
 [build.environment]
   NODE_VERSION = "20"
+
+# Serve the default sample banks from our own domain.
+# The browser only ever requests neurorave.netlify.app/cdn/*; Netlify proxies
+# these to the upstream sample CDN server-side (status 200 = rewrite, not a redirect).
+[[redirects]]
+  from = "/cdn/*"
+  to = "https://strudel.b-cdn.net/:splat"
+  status = 200
+  force = true
