@@ -26,15 +26,6 @@ const currentPage = Astro.url.pathname;
             <LeftSidebar currentPage={currentPage} />
           </aside>
           <PageContent>
-            <h1>Song Collection</h1>
-            <p>
-              Songs created with NeuroRAVE by the community, pulled live from the
-              <a href={`https://github.com/k4ran909/neurorave-songs-collection`} target="_blank" rel="noreferrer"
-                >neurorave-songs-collection</a
-              > repo. Add a <code>.js</code> song to that repo and it shows up here automatically. Click <strong
-                >Open in NeuroRAVE</strong
-              > to load any song straight into the editor.
-            </p>
             <SongCollection client:only="react" />
           </PageContent>
           <aside class="fixed right-0 h-full overflow-auto pr-4 pl-0 pb-16 hidden xl:block" title="Table of Contents">
