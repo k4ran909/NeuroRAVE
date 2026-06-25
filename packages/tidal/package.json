@@ -6,7 +6,7 @@
   "module": "tidal.mjs",
   "repository": {
     "type": "git",
-    "url": "git+https://codeberg.org/uzu/strudel/src/branch/main/packages/tidal"
+    "url": "git+https://github.com/k4ran909/NeuroRAVE/blob/main/packages/tidal"
   },
   "keywords": [
     "haskell",
@@ -15,9 +15,9 @@
   "author": "Felix Roos <flix91@gmail.com>",
   "license": "AGPL-3.0-or-later",
   "bugs": {
-    "url": "https://codeberg.org/uzu/strudel/issues"
+    "url": "https://github.com/k4ran909/NeuroRAVE/issues"
   },
-  "homepage": "https://codeberg.org/uzu/strudel/src/branch/main/packages/hs2js",
+  "homepage": "https://github.com/k4ran909/NeuroRAVE/blob/main/packages/hs2js",
   "dependencies": {
     "@strudel/core": "workspace:*",
     "@strudel/mini": "workspace:*",

@@ -240,7 +240,7 @@ function isLabelStatement(node) {
 }
 
 // converts label expressions to p calls: "x: y" to "y.p('x')"
-// see https://codeberg.org/uzu/strudel/issues/990
+// see issue #990
 function labelToP(node) {
   return {
     type: 'ExpressionStatement',

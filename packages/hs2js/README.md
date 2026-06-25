@@ -2,7 +2,7 @@
 
 Experimental haskell in javascript interpreter. Many haskell features are not implemented.
 This projects mainly exists to be able to write and interpret [Tidal Cycles](https://tidalcycles.org/) code in the browser,
-as part of [Strudel](https://codeberg.org/uzu/strudel). This project could only exist thanks to [tree-sitter-haskell](https://github.com/tree-sitter/tree-sitter-haskell).
+as part of [Neuro RAVE](https://github.com/k4ran909/NeuroRAVE). This project could only exist thanks to [tree-sitter-haskell](https://github.com/tree-sitter/tree-sitter-haskell).
 
 ## Installation
 

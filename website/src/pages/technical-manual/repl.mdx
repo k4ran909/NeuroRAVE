@@ -7,7 +7,7 @@ import { MiniRepl } from '../../docs/MiniRepl';
 
 # REPL
 
-{/* The [REPL](https://strudel.cc/) is the place where all packages come together to form a live coding system. It can also be seen as a reference implementation for users of the library. */}
+{/* The REPL is the place where all packages come together to form a live coding system. It can also be seen as a reference implementation for users of the library. */}
 
 While Neuro RAVE can be used as a library in any JavaScript codebase, its main, reference user interface is Neuro RAVE[^1], which is a browser-based live coding environment. This live code editor is dedicated to manipulating Neuro RAVE patterns while they play. The REPL features built-in visual feedback, highlighting which elements in the patterned (mini-notation) sequences are influencing the event that is currently being played. This feedback is designed to support both learning and live use of Neuro RAVE.
 
@@ -19,7 +19,7 @@ Besides a UI for playback control and meta information, the main part of the REP
 2. While the REPL is running, the `Scheduler` queries the active `Pattern` by a regular interval, generating `Events` (also known as `Haps` in Neuro) for the next time span.
 3. For each scheduling tick, all generated `Events` are triggered by calling their `onTrigger` method, which is set by the output.
 
-<img src="https://codeberg.org/uzu/strudel/raw/branch/talk/talk/public/strudelflow.png" width="600" />
+<img src="/strudelflow.png" width="600" />
 
 ## User Code
 
@@ -77,8 +77,8 @@ The sum of both is passed to `withLoc` to tell each element its location, which 
 
 Another important part of the user code is the mini notation, which allows to express rhythms in a short manner.
 
-- The Neuro RAVE REPL does not support [block based evaluation](https://codeberg.org/uzu/strudel/issues/34) yet.
-- the mini notation is [implemented as a PEG grammar](https://codeberg.org/uzu/strudel/src/branch/talk/packages/mini/krill.pegjs), living in the [mini package](https://codeberg.org/uzu/strudel/src/branch/main/packages/mini)
+- The Neuro RAVE REPL does not support block based evaluation (#34) yet.
+- the mini notation is [implemented as a PEG grammar](https://github.com/k4ran909/NeuroRAVE/blob/main/packages/mini/krill.pegjs), living in the [mini package](https://github.com/k4ran909/NeuroRAVE/tree/main/packages/mini)
 - it is based on [krill](https://github.com/Mdashdotdashn/krill) by Mdashdotdashn
 - the peg grammar is used to generate a parser with [peggyjs](https://peggyjs.org/)
 - the generated parser takes a mini notation string and outputs an AST

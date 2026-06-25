@@ -26,10 +26,10 @@ export async function initCode() {
     const hash = initialUrl.split('?')[1]?.split('#')?.[0]?.split('&')[0];
     const codeParam = window.location.href.split('#')[1] || '';
     if (codeParam) {
-      // looking like https://strudel.cc/#ImMzIGUzIg%3D%3D (hash length depends on code length)
+      // looking like /#ImMzIGUzIg%3D%3D (hash length depends on code length)
       return hash2code(codeParam);
     } else if (hash) {
-      // looking like https://strudel.cc/?J01s5i1J0200 (fixed hash length)
+      // looking like /?J01s5i1J0200 (fixed hash length)
       return supabase
         .from('code_v1')
         .select('code')

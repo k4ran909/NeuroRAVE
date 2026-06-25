@@ -2,7 +2,7 @@
 euclid.mjs - Bjorklund/Euclidean/Diaspora rhythms
 Copyright (C) 2023 Rohan Drape and strudel contributors
 
-See <https://codeberg.org/uzu/strudel/src/branch/main/packages/core/euclid.mjs> for authors of this file.
+See <https://github.com/k4ran909/NeuroRAVE/blob/main/packages/core/euclid.mjs> for authors of this file.
 
 The Bjorklund algorithm implementation is ported from the Haskell Music Theory Haskell module by Rohan Drape -
 https://rohandrape.net/?t=hmt

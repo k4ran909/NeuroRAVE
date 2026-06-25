@@ -16043,7 +16043,7 @@
       "scope": "global"
     },
     {
-      "comment": "/**\n *\n * Sends each hap as an OSC message, which can be picked up by SuperCollider or any other OSC-enabled software.\n * For more info, read [MIDI & OSC in the docs](https://strudel.cc/learn/input-output/)\n *\n * @name osc\n * @memberof Pattern\n * @returns Pattern\n */",
+      "comment": "/**\n *\n * Sends each hap as an OSC message, which can be picked up by SuperCollider or any other OSC-enabled software.\n * For more info, read about MIDI & OSC in the docs under learn/input-output\n *\n * @name osc\n * @memberof Pattern\n * @returns Pattern\n */",
       "meta": {
         "filename": "osc.mjs",
         "lineno": 76,
@@ -16051,7 +16051,7 @@
         "path": "C:\\Users\\k4ran\\OneDrive\\Desktop\\temp\\strudel\\packages\\osc",
         "code": {}
       },
-      "description": "<p>Sends each hap as an OSC message, which can be picked up by SuperCollider or any other OSC-enabled software.\nFor more info, read <a href=\"https://strudel.cc/learn/input-output/\">MIDI &amp; OSC in the docs</a></p>",
+      "description": "<p>Sends each hap as an OSC message, which can be picked up by SuperCollider or any other OSC-enabled software.\nFor more info, read MIDI &amp; OSC in the docs under learn/input-output</p>",
       "name": "osc",
       "memberof": "Pattern",
       "returns": [

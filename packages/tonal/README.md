@@ -31,4 +31,4 @@ yields:
 
 ## Tonal API
 
-See "Tonal API" in the [Strudel Tutorial](https://strudel.cc/learn/tonal)
+See "Tonal API" in the Strudel Tutorial

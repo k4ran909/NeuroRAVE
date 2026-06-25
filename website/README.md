@@ -1,6 +1,6 @@
 # Neuro RAVE Website
 
-This is the website for Neuro RAVE, deployed at [strudel.cc](https://strudel.cc).
+This is the website for Neuro RAVE.
 It includes the REPL live coding editor and the documentation site.
 
 ## Run locally

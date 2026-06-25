@@ -178,7 +178,7 @@ export function renderVoicing({ chord, dictionary, offset = 0, n, mode = 'below'
   return notes;
 }
 
-// https://codeberg.org/uzu/strudel/blob/14184993d0ee7d69c47df57ac864a1a0f99a893f/packages/tonal/tonleiter.mjs
+// packages/tonal/tonleiter.mjs
 const steps = [1, 0, 2, 0, 3, 4, 0, 5, 0, 6, 0, 7];
 const notes = ['C', '', 'D', '', 'E', 'F', '', 'G', '', 'A', '', 'B'];
 const noteLetters = ['C', 'D', 'E', 'F', 'G', 'A', 'B'];

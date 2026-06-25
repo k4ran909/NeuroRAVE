@@ -1,6 +1,6 @@
 /*
 value.mjs - <short description TODO>
-Copyright (C) 2022 Strudel contributors - see <https://codeberg.org/uzu/strudel/src/branch/main/packages/core/value.mjs>
+Copyright (C) 2022 Strudel contributors - see <https://github.com/k4ran909/NeuroRAVE/blob/main/packages/core/value.mjs>
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more details. You should have received a copy of the GNU Affero General Public License along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
@@ -9,7 +9,7 @@ import { logger } from './logger.mjs';
 
 export function unionWithObj(a, b, func) {
   if (b?.value !== undefined && Object.keys(b).length === 1) {
-    // https://codeberg.org/uzu/strudel/issues/1026
+    // issue #1026
     logger(`[warn]: Can't do arithmetic on control pattern.`);
     return a;
   }

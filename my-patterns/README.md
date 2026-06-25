@@ -9,9 +9,9 @@ Please note: These instructions have not been fully tested/adapted since strudel
 
 ## deploy
 
-### 1. fork the [strudel repo on codeberg](https://codeberg.org/uzu/strudel.git)
+### 1. fork the [Neuro RAVE repo on GitHub](https://github.com/k4ran909/NeuroRAVE)
 
-### 2. clone your fork to your machine `git clone https://codeberg.org/<your-username>/strudel.git strudel && cd strudel`
+### 2. clone your fork to your machine `git clone https://github.com/<your-username>/NeuroRAVE.git NeuroRAVE && cd NeuroRAVE`
 
 ### 3. create a separate branch like `git branch patternuary && git checkout patternuary`
 

@@ -113,7 +113,7 @@ self.onconnect = function (e) {
   port.start(); // Required when using addEventListener. Otherwise called implicitly by onmessage setter.
 };
 
-// used to consistently schedule events, for use in a service worker - see <https://codeberg.org/uzu/strudel/src/branch/main/packages/core/clockworker.mjs>
+// used to consistently schedule events, for use in a service worker - see <https://github.com/k4ran909/NeuroRAVE/blob/main/packages/core/clockworker.mjs>
 function createClock(
   getTime,
   callback, // called slightly before each cycle

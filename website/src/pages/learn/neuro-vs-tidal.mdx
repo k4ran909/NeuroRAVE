@@ -79,7 +79,7 @@ Instead of `+` / `add`, you can use any of the available operators of the first 
 
 ## Function Compatibility
 
-[This issue](https://codeberg.org/uzu/strudel/issues/31) tracks which Tidal functions are implemented in Neuro RAVE.
+This issue (#31) tracks which Tidal functions are implemented in Neuro RAVE.
 The list might not be 100% up to date and probably also misses some functions completely..
 Feel encouraged to search the source code for a function you're looking for.
 If you find a function that's not on the list, please tell!
@@ -89,7 +89,7 @@ If you find a function that's not on the list, please tell!
 As seen in the example, the `#` operator (shorthand for `|>`) is also just a function call in neuro.
 So `note "c5" # s "gtr"` becomes `note("c5").s('gtr')`.
 
-[This file](https://codeberg.org/uzu/strudel/src/branch/main/packages/core/controls.mjs) lists all available control params.
+[This file](https://github.com/k4ran909/NeuroRAVE/blob/main/packages/core/controls.mjs) lists all available control params.
 Note that not all of those work in the Webaudio Output of Neuro.
 If you find a tidal control that's not on the list, please tell!
 
@@ -107,11 +107,11 @@ You can find a [list of available effects here](/learn/effects/).
 ### Sampler
 
 Neuro RAVE's sampler supports [a subset](/learn/samples) of Superdirt's sampler.
-Also, samples are always loaded from a URL rather than from the disk, although [that might be possible in the future](https://codeberg.org/uzu/strudel/issues/118).
+Also, samples are always loaded from a URL rather than from the disk, although that might be possible in the future (#118).
 
 ## Evaluation
 
-The Neuro RAVE REPL does not support [block based evaluation](https://codeberg.org/uzu/strudel/issues/34) yet.
+The Neuro RAVE REPL does not support block based evaluation (#34) yet.
 You can use labeled statements and `_` to mute:
 
 <MiniRepl

@@ -84,15 +84,15 @@ the name being based on [SuperDirt](https://github.com/musikinformatik/SuperDirt
 Superdough is now also used by [topos](https://topos.live/), a creation of [Raphaël Forment](https://github.com/Bubobubobubobubo/), who helped me implement a bunch of new features.
 Lately, [Jade Rowland](https://github.com/daslyfe) has also developed many synthesis features into superdough! Here is a non-exhaustive list of new features:
 
-- [filter envelopes](https://strudel.cc/learn/effects/#filter-envelope) + [24db filter option](https://strudel.cc/learn/effects/#ftype)
-- [pitch envelopes](https://strudel.cc/learn/effects/#pitch-envelope)
-- [fm synthesis](https://strudel.cc/learn/synths/#fm-synthesis)
-- [wavetable synthesis](https://strudel.cc/recipes/recipes/#wavetable-synthesis)
-- [phaser](https://strudel.cc/learn/effects/#phaser)
-- [vibrato](https://strudel.cc/learn/synths/#vibrato)
-- [noise](https://strudel.cc/learn/synths/#noise)
-- [an integration of the zzfx synth](https://strudel.cc/learn/synths/#zzfx)
-- [compressor](https://strudel.cc/learn/effects/#compressor)
+- filter envelopes + 24db filter option
+- pitch envelopes
+- fm synthesis
+- wavetable synthesis
+- phaser
+- vibrato
+- noise
+- an integration of the zzfx synth
+- compressor
 - multichannel audio / audio device selection
 
 import { MiniRepl } from '@src/docs/MiniRepl';
@@ -197,7 +197,7 @@ Strudel now supports most chord symbols:
   .phaser(4).room(.5)`}
 />
 
-So far, this is only [documented briefly](https://strudel.cc/learn/tonal/#voicing), a more in-depth guide will follow!
+So far, this is only documented briefly, a more in-depth guide will follow!
 
 ### Multiplayer / Collaborative Coding
 
@@ -216,9 +216,9 @@ Here is a recording of the first session we organized over the discord server:
 
 The midi integration has gotten a few new features:
 
-- [clock out](https://codeberg.org/uzu/strudel/pulls/710) to sync your midi devices / DAW to the strudel clock (better doc coming soon)
-- [cc output](https://strudel.cc/learn/input-output/#ccn--ccv) to send cc values to your gear
-- [cc input](https://codeberg.org/uzu/strudel/pulls/699) to control strudel via MIDI (better doc coming soon)
+- clock out (#710) to sync your midi devices / DAW to the strudel clock (better doc coming soon)
+- cc output to send cc values to your gear
+- cc input (#699) to control strudel via MIDI (better doc coming soon)
 
 Here is a little demo of me fiddling with a midi controller, changing a piano pattern:
 
@@ -226,9 +226,9 @@ Here is a little demo of me fiddling with a midi controller, changing a piano pa
 
 ### Experimental Features
 
-- You can now run [hydra inside strudel](https://strudel.cc/learn/hydra/) + you can even run strudel in [hydra](https://hydra.ojack.xyz), thanks to [Olivia Jack](https://ojack.xyz/) and [Ámbar Tenorio Fornés](https://atenor.io/)! Read more [here](https://alpaca.pubpub.org/pub/b7hwrjfk/release/2?readingCollection=1def0192)
+- You can now run hydra inside strudel + you can even run strudel in [hydra](https://hydra.ojack.xyz), thanks to [Olivia Jack](https://ojack.xyz/) and [Ámbar Tenorio Fornés](https://atenor.io/)! Read more [here](https://alpaca.pubpub.org/pub/b7hwrjfk/release/2?readingCollection=1def0192)
 - There is now a [VSCode Plugin](https://marketplace.visualstudio.com/items?itemName=roipoussiere.tidal-strudel) thanks to [roipoussiere](https://github.com/roipoussiere)! It allows you run patterns from a `.strudel` file inside VSCode.
-- Strudel can now be downloaded as a desktop app, thanks to [vasilymilovidov](https://github.com/vasilymilovidov) who has wrapped the REPL with [tauri](https://tauri.app/). You can download it [on the releases page](https://codeberg.org/uzu/strudel/releases) (scroll down to Assets). The performance is not optimal on MacOS and Linux, which is why it is still considered experimental
+- Strudel can now be downloaded as a desktop app, thanks to [vasilymilovidov](https://github.com/vasilymilovidov) who has wrapped the REPL with [tauri](https://tauri.app/). You can download it on the releases page (scroll down to Assets). The performance is not optimal on MacOS and Linux, which is why it is still considered experimental
 
 ## Stats
 

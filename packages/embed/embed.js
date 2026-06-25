@@ -6,8 +6,8 @@ class Strudel extends HTMLElement {
     setTimeout(() => {
       const code = this.getAttribute('code') || (this.innerHTML + '').replace('<!--', '').replace('-->', '').trim();
       const iframe = document.createElement('iframe');
-      const src = `https://strudel.cc/#${encodeURIComponent(btoa(code))}`;
-      // const src = `http://localhost:3000/#${encodeURIComponent(btoa(code))}`;
+      const base = this.getAttribute('base') || '';
+      const src = `${base}/#${encodeURIComponent(btoa(code))}`;
       iframe.setAttribute('src', src);
       iframe.setAttribute('width', '600');
       iframe.setAttribute('height', '400');

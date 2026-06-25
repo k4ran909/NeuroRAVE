@@ -8,7 +8,7 @@ import { JsDoc } from '../../docs/JsDoc';
 
 # MIDI, OSC and MQTT
 
-Normally, Neuro RAVE is used to pattern sound, using its own '[web audio](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)'-based synthesiser called [SuperDough](https://codeberg.org/uzu/strudel/src/branch/main/packages/superdough).
+Normally, Neuro RAVE is used to pattern sound, using its own '[web audio](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)'-based synthesiser called [SuperDough](https://github.com/k4ran909/NeuroRAVE/tree/main/packages/superdough).
 
 It is also possible to pattern other things with Neuro RAVE, such as software and hardware synthesisers with MIDI, other software using Open Sound Control/OSC (including the [SuperDirt](https://github.com/musikinformatik/SuperDirt/) synthesiser commonly used with Neuro RAVE's sibling [TidalCycles](https://tidalcycles.org/)), or the MQTT 'internet of things' protocol.
 
@@ -184,7 +184,7 @@ To get SuperDirt to work with Neuro RAVE, you need to
 1. install SuperCollider + sc3 plugins, see [Tidal Docs](https://tidalcycles.org/docs/) (Install Tidal) for more info.
 2. install SuperDirt, or the [StrudelDirt](https://github.com/daslyfe/StrudelDirt) fork which is optimised for use with Neuro RAVE
 3. install [node.js](https://nodejs.org/en/)
-4. download [Strudel Repo](https://codeberg.org/uzu/strudel/) (or git clone, if you have git installed)
+4. download [Strudel Repo](https://github.com/k4ran909/NeuroRAVE) (or git clone, if you have git installed)
 5. run `pnpm i` in the strudel directory
 6. run `pnpm run osc` to start the osc server, which forwards OSC messages from Neuro RAVE REPL to SuperCollider
 
@@ -193,7 +193,7 @@ Now you're all set!
 ## Usage
 
 1. Start SuperCollider, either using SuperCollider IDE or by running `sclang` in a terminal
-2. Open the [Neuro RAVE REPL](https://strudel.cc/#cygiYmQgc2QiKS5vc2MoKQ%3D%3D)
+2. Open the Neuro RAVE REPL
 
 ...or test it here:
 

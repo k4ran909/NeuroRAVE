@@ -127,8 +127,8 @@ For the future, it is planned to integrate alternative sound engines such as Gli
 
 # Links
 
-The Strudel REPL is available at <https://strudel.cc>, including an interactive tutorial.
-The repository is at <https://codeberg.org/uzu/strudel/releases>, all the code is open source under the GPL-3.0 License.
+The Strudel REPL is available online, including an interactive tutorial.
+All the code is open source under the GPL-3.0 License.
 
 # Acknowledgments
 

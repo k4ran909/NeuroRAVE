@@ -57,7 +57,7 @@ More percussive sounds:
 
 Furthermore, strudel also loads instrument samples from [VCSL](https://github.com/sgossner/VCSL) by default.
 
-To see which sample names are available, open the `sounds` tab in the [REPL](https://strudel.cc/).
+To see which sample names are available, open the `sounds` tab in the REPL.
 
 You can also create custom aliases for existing sounds using the `soundAlias` function:
 
@@ -70,7 +70,7 @@ s("kick")`}
 Note that only the sample maps (mapping names to URLs) are loaded initially, while the audio samples themselves are not loaded until they are actually played.
 This behaviour of loading things only when they are needed is also called `lazy loading`.
 While it saves resources, it can also lead to sounds not being audible the first time they are triggered, because the sound is still loading.
-[This might be fixed in the future](https://codeberg.org/uzu/strudel/issues/187)
+This might be fixed in the future (#187)
 
 # Sound Banks
 

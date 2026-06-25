@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://codeberg.org/uzu/strudel.git"
+    "url": "git+https://github.com/k4ran909/NeuroRAVE.git"
   },
   "keywords": [
     "titdalcycles",
@@ -25,9 +25,9 @@
   "author": "Alex McLean <alex@slab.org>",
   "license": "AGPL-3.0-or-later",
   "bugs": {
-    "url": "https://codeberg.org/uzu/strudel/issues"
+    "url": "https://github.com/k4ran909/NeuroRAVE/issues"
   },
-  "homepage": "https://codeberg.org/uzu/strudel#readme",
+  "homepage": "https://github.com/k4ran909/NeuroRAVE#readme",
   "dependencies": {
     "@strudel/core": "workspace:*"
   },

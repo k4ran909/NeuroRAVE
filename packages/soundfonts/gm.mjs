@@ -537,7 +537,7 @@ export default {
   ],
   gm_synth_bass_1: [
     // Synth Bass 1: Bass
-    // '0380_Aspirin_sf2_file', // broken in safari https://codeberg.org/uzu/strudel/issues/1384
+    // '0380_Aspirin_sf2_file', // broken in safari issue #1384
     '0380_Chaos_sf2_file',
     '0380_FluidR3_GM_sf2_file',
     // 0380_GeneralUserGS_sf2_file // laut

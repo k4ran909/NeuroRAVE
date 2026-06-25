@@ -1,6 +1,6 @@
 /*
 pattern.test.mjs - <short description TODO>
-Copyright (C) 2022 Strudel contributors - see <https://codeberg.org/uzu/strudel/src/branch/main/packages/core/test/pattern.test.mjs>
+Copyright (C) 2022 Strudel contributors - see <https://github.com/k4ran909/NeuroRAVE/blob/main/packages/core/test/pattern.test.mjs>
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more details. You should have received a copy of the GNU Affero General Public License along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
@@ -885,7 +885,7 @@ describe('Pattern', () => {
       );
     });
     it('Doesnt drop haps in the 9th cycle', () => {
-      // fixed with https://codeberg.org/uzu/strudel/commit/72eeaf446e3d5e186d63cc0d2276f0723cde017a
+      // fixed with commit 72eeaf4
       expect(sequence(1, 2, 3).ply(2).early(8).firstCycle().length).toBe(6);
     });
   });

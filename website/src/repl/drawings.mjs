@@ -23,7 +23,7 @@ angle(saw)
   .animate({smear:0})
 `;
 
-// https://strudel.cc/?C31_NrcMfZEO
+// ?C31_NrcMfZEO
 export const spiralflower = `let {innerWidth:ww,innerHeight:wh} = window;
 ww*=window.devicePixelRatio;
 wh*=window.devicePixelRatio;

@@ -52,18 +52,12 @@ note("{g g a# g g4}%8".add("{0 7 12 0}%8")).lpf(500)
 
 The editor now supports multiple visuals within the code, using the `_` prefix for viz functions:
 
-<img
-  width="595"
-  alt="Screenshot 2024-06-01 at 01 23 51"
-  src="https://codeberg.org/uzu/strudel/assets/12023032/978fee85-e533-4da6-a245-d20d0083f57e"
-/>
-
 - `._pianoroll()`: inline pianoroll
 - `._punchcard()`: inline punchcard
 - `._scope()`: inline scope
 - `._pitchwheel()`: inline pitchwheel
 
-For more info, check out the new [Visual Feedback Page](https://strudel.cc/learn/visual-feedback/)
+For more info, check out the new Visual Feedback Page
 
 ### label notation
 
@@ -114,12 +108,12 @@ $: s("[- hh]*4")
 all(x=>x.room(.5))
 ```
 
-This notation is now the recommended way to [play patterns in parallel](https://strudel.cc/workshop/first-notes/#playing-multiple-patterns)
+This notation is now the recommended way to play patterns in parallel
 
 ### Clock sync between multiple instances
 
 timing has received a major overhaul, and is now much more accurate on all browsers. Additionally, you can now sync timing across multiple windows.
-![Screenshot 2024-06-02 at 11 24 40 PM](https://codeberg.org/uzu/strudel/assets/47068718/840be744-a13e-4d7b-ab09-50d3a70b1f85)
+!Screenshot 2024-06-02 at 11 24 40 PM
 
 ### Better sample upload support
 
@@ -147,146 +141,146 @@ This release comes with a bunch of breaking changes. If you find your patterns t
 In case of doubt, add the line `// @version 1.0` to your old pattern.
 If you're having problems, please let us know!
 
-- remove legacy legato + duration implementations by @felixroos in https://codeberg.org/uzu/strudel/pull/965
-- Velocity in value by @felixroos in https://codeberg.org/uzu/strudel/pull/974
-- use ireal as default voicing dict by @felixroos https://codeberg.org/uzu/strudel/pull/967
-- Color in hap value by @felixroos https://codeberg.org/uzu/strudel/pull/1007
-- rename trig -> reset, trigzero -> restart by @felixroos https://codeberg.org/uzu/strudel/pull/1010
-- remove dangerous arithmetic feature by @felixroos https://codeberg.org/uzu/strudel/pull/1030
-- change fanchor to 0 by @daslyfe https://codeberg.org/uzu/strudel/pull/1107
+- remove legacy legato + duration implementations by @felixroos in PR #965
+- Velocity in value by @felixroos in PR #974
+- use ireal as default voicing dict by @felixroos PR #967
+- Color in hap value by @felixroos PR #1007
+- rename trig -> reset, trigzero -> restart by @felixroos PR #1010
+- remove dangerous arithmetic feature by @felixroos PR #1030
+- change fanchor to 0 by @daslyfe PR #1107
 
 ## superdough features
 
-- replace shape with distort in learn doc by @daslyfe https://codeberg.org/uzu/strudel/pull/982
-- Worklet Improvents / fixes by @daslyfe https://codeberg.org/uzu/strudel/pull/963
-- supersaw oscillator by @daslyfe https://codeberg.org/uzu/strudel/pull/978
-- Add analog-style ladder filter by @daslyfe https://codeberg.org/uzu/strudel/pull/1103
-- Calculate phaser modulation phase based on time by @daslyfe https://codeberg.org/uzu/strudel/pull/1110
-- rollback phaser by @daslyfe https://codeberg.org/uzu/strudel/pull/1113
+- replace shape with distort in learn doc by @daslyfe PR #982
+- Worklet Improvents / fixes by @daslyfe PR #963
+- supersaw oscillator by @daslyfe PR #978
+- Add analog-style ladder filter by @daslyfe PR #1103
+- Calculate phaser modulation phase based on time by @daslyfe PR #1110
+- rollback phaser by @daslyfe PR #1113
 
 ## editor / ui features
 
-- 'Enable Bracket Matching' option in Codemirror by @eefano https://codeberg.org/uzu/strudel/pull/956
-- REPL sync between windows by @daslyfe https://codeberg.org/uzu/strudel/pull/900
-- inline viz / widgets package by @felixroos https://codeberg.org/uzu/strudel/pull/989
-- Inline punchcard + spiral by @felixroos https://codeberg.org/uzu/strudel/pull/1008
-- More fonts by @felixroos https://codeberg.org/uzu/strudel/pull/1023
-- better theme integration for visuals + various fixes by @felixroos https://codeberg.org/uzu/strudel/pull/1024
-- add setting for sync flag by @felixroos https://codeberg.org/uzu/strudel/pull/1025
-- add closeBrackets setting by @felixroos https://codeberg.org/uzu/strudel/pull/1031
-- add font file types to offline cache by @felixroos https://codeberg.org/uzu/strudel/pull/1032
-- pitchwheel visual by @felixroos https://codeberg.org/uzu/strudel/pull/1041
-- repl: set document.title from @title by @kasparsj https://codeberg.org/uzu/strudel/pull/1090
-- Samples tab improvements by @daslyfe https://codeberg.org/uzu/strudel/pull/1102
+- 'Enable Bracket Matching' option in Codemirror by @eefano PR #956
+- REPL sync between windows by @daslyfe PR #900
+- inline viz / widgets package by @felixroos PR #989
+- Inline punchcard + spiral by @felixroos PR #1008
+- More fonts by @felixroos PR #1023
+- better theme integration for visuals + various fixes by @felixroos PR #1024
+- add setting for sync flag by @felixroos PR #1025
+- add closeBrackets setting by @felixroos PR #1031
+- add font file types to offline cache by @felixroos PR #1032
+- pitchwheel visual by @felixroos PR #1041
+- repl: set document.title from @title by @kasparsj PR #1090
+- Samples tab improvements by @daslyfe PR #1102
 
 ## language features
 
-- pickOut(), pickRestart(), pickReset() by @eefano https://codeberg.org/uzu/strudel/pull/950
-- Auto await samples by @felixroos https://codeberg.org/uzu/strudel/pull/955
-- feat: can now invert euclid pulses with negative numbers by @felixroos https://codeberg.org/uzu/strudel/pull/959
-- Nested controls by @felixroos https://codeberg.org/uzu/strudel/pull/973
-- alias - for ~ by @yaxu https://codeberg.org/uzu/strudel/pull/981
-- Beat-oriented functionality by @yaxu https://codeberg.org/uzu/strudel/pull/976
-- Labeled statements by @felixroos https://codeberg.org/uzu/strudel/pull/991
-- accidentals in scale degrees by @eefano https://codeberg.org/uzu/strudel/pull/1000
-- Feature: tactus marking by @yaxu https://codeberg.org/uzu/strudel/pull/1021
-- Tactus tidy by @yaxu https://codeberg.org/uzu/strudel/pull/1027
-- Wax, wane, taper and taperlist by @yaxu https://codeberg.org/uzu/strudel/pull/1042
-- transpose: support all combinations of numbers and strings for notes and intervals by @felixroos https://codeberg.org/uzu/strudel/pull/1048
-- anonymous patterns + muting by @felixroos https://codeberg.org/uzu/strudel/pull/1059
-- add swing + swingBy by @felixroos https://codeberg.org/uzu/strudel/pull/1038
-- Stepwise functions from Tidal by @yaxu https://codeberg.org/uzu/strudel/pull/1060
-- Tactus tweaks - fixes for maintaining tactus and highlight locations by @yaxu https://codeberg.org/uzu/strudel/pull/1065
-- Fix stepjoin by @yaxu https://codeberg.org/uzu/strudel/pull/1067
-- More tactus tidying by @yaxu https://codeberg.org/uzu/strudel/pull/1071
-- Tactus calculation toggle and breaking change to tactus calculation in fast/slow/hurry by @yaxu https://codeberg.org/uzu/strudel/pull/1081
-- hs2js package / tidal parser by @felixroos https://codeberg.org/uzu/strudel/pull/870
-- Add the mousex and mousey signal by @Enelg52 https://codeberg.org/uzu/strudel/pull/1112
-- can now access strudelMirror from repl by @felixroos https://codeberg.org/uzu/strudel/pull/1117
+- pickOut(), pickRestart(), pickReset() by @eefano PR #950
+- Auto await samples by @felixroos PR #955
+- feat: can now invert euclid pulses with negative numbers by @felixroos PR #959
+- Nested controls by @felixroos PR #973
+- alias - for ~ by @yaxu PR #981
+- Beat-oriented functionality by @yaxu PR #976
+- Labeled statements by @felixroos PR #991
+- accidentals in scale degrees by @eefano PR #1000
+- Feature: tactus marking by @yaxu PR #1021
+- Tactus tidy by @yaxu PR #1027
+- Wax, wane, taper and taperlist by @yaxu PR #1042
+- transpose: support all combinations of numbers and strings for notes and intervals by @felixroos PR #1048
+- anonymous patterns + muting by @felixroos PR #1059
+- add swing + swingBy by @felixroos PR #1038
+- Stepwise functions from Tidal by @yaxu PR #1060
+- Tactus tweaks - fixes for maintaining tactus and highlight locations by @yaxu PR #1065
+- Fix stepjoin by @yaxu PR #1067
+- More tactus tidying by @yaxu PR #1071
+- Tactus calculation toggle and breaking change to tactus calculation in fast/slow/hurry by @yaxu PR #1081
+- hs2js package / tidal parser by @felixroos PR #870
+- Add the mousex and mousey signal by @Enelg52 PR #1112
+- can now access strudelMirror from repl by @felixroos PR #1117
 
 ## sampler
 
 If you have nodejs installed on your system, you can now use [@strudel/sampler](https://www.npmjs.com/package/@strudel/sampler) to serve samples from disk to the REPL or flok.
 
-- local sample server cli by @felixroos https://codeberg.org/uzu/strudel/pull/1033
-- Fix sampler paths by @felixroos https://codeberg.org/uzu/strudel/pull/1034
-- Fix sampler windows by @felixroos https://codeberg.org/uzu/strudel/pull/1108
-- fix sampler on windows by @geikha https://codeberg.org/uzu/strudel/pull/1109
+- local sample server cli by @felixroos PR #1033
+- Fix sampler paths by @felixroos PR #1034
+- Fix sampler windows by @felixroos PR #1108
+- fix sampler on windows by @geikha PR #1109
 
 ## docs
 
-- V1 release notes by @felixroos https://codeberg.org/uzu/strudel/pull/935
-- Minor documentation error: Update first-sounds.mdx by @mhetrick https://codeberg.org/uzu/strudel/pull/941
-- Update synths.mdx by @andresgottlieb https://codeberg.org/uzu/strudel/pull/984
-- using strudel in your project guide + cleanup examples by @felixroos https://codeberg.org/uzu/strudel/pull/1006
-- Document signals by @ilesinge https://codeberg.org/uzu/strudel/pull/1015
-- improve tutorial + custom samples doc by @felixroos https://codeberg.org/uzu/strudel/pull/1053
-- fix cr typo on first-sounds.mdx by @cleary https://codeberg.org/uzu/strudel/pull/1068
-- fix first sounds typo by @cleary https://codeberg.org/uzu/strudel/pull/1069
-- add `<...>` to first-sounds.mdx recap by @cleary https://codeberg.org/uzu/strudel/pull/1070
-- add nesting to `off` example variation in pattern-effects.mdx by @cleary https://codeberg.org/uzu/strudel/pull/1075
-- fix translation issue in first-effects.mdx by @cleary https://codeberg.org/uzu/strudel/pull/1072
-- add signals to recap in first-effects.mdx by @cleary https://codeberg.org/uzu/strudel/pull/1073
-- fix docs on alignment.mdx by @diegodorado https://codeberg.org/uzu/strudel/pull/1076
-- fix little dub tune example by @lukad https://codeberg.org/uzu/strudel/pull/1104
-- clarify `off` in pattern-effects.mdx by @cleary https://codeberg.org/uzu/strudel/pull/1074
-- Fixes drawPianoroll import in codemirror example by @giohappy https://codeberg.org/uzu/strudel/pull/1116
-- Migrate tutorial fanchor by @felixroos https://codeberg.org/uzu/strudel/pull/1122
+- V1 release notes by @felixroos PR #935
+- Minor documentation error: Update first-sounds.mdx by @mhetrick PR #941
+- Update synths.mdx by @andresgottlieb PR #984
+- using strudel in your project guide + cleanup examples by @felixroos PR #1006
+- Document signals by @ilesinge PR #1015
+- improve tutorial + custom samples doc by @felixroos PR #1053
+- fix cr typo on first-sounds.mdx by @cleary PR #1068
+- fix first sounds typo by @cleary PR #1069
+- add `<...>` to first-sounds.mdx recap by @cleary PR #1070
+- add nesting to `off` example variation in pattern-effects.mdx by @cleary PR #1075
+- fix translation issue in first-effects.mdx by @cleary PR #1072
+- add signals to recap in first-effects.mdx by @cleary PR #1073
+- fix docs on alignment.mdx by @diegodorado PR #1076
+- fix little dub tune example by @lukad PR #1104
+- clarify `off` in pattern-effects.mdx by @cleary PR #1074
+- Fixes drawPianoroll import in codemirror example by @giohappy PR #1116
+- Migrate tutorial fanchor by @felixroos PR #1122
 
 ## internals
 
-- remove cjs builds by @felixroos https://codeberg.org/uzu/strudel/pull/945
-- controls refactoring: simplify exports by @felixroos https://codeberg.org/uzu/strudel/pull/962
-- move canvas related helpers from core to new draw package by @felixroos https://codeberg.org/uzu/strudel/pull/971
-- remove canvas, externalize samples, delete junk by @felixroos https://codeberg.org/uzu/strudel/pull/1003
-- Improve performance of ! (replicate) by @yaxu https://codeberg.org/uzu/strudel/pull/1084
-- Benchmarks by @yaxu https://codeberg.org/uzu/strudel/pull/1079
+- remove cjs builds by @felixroos PR #945
+- controls refactoring: simplify exports by @felixroos PR #962
+- move canvas related helpers from core to new draw package by @felixroos PR #971
+- remove canvas, externalize samples, delete junk by @felixroos PR #1003
+- Improve performance of ! (replicate) by @yaxu PR #1084
+- Benchmarks by @yaxu PR #1079
 
 ## fixes
 
-- fix midi issue on firefox and added quote error by @Enelg52 https://codeberg.org/uzu/strudel/pull/936
-- fix: pianoroll sorting by @felixroos https://codeberg.org/uzu/strudel/pull/938
-- account for cps in midi time duration by @daslyfe https://codeberg.org/uzu/strudel/pull/954
-- fix script importable packages (web + repl) by @felixroos https://codeberg.org/uzu/strudel/pull/957
-- fix: reset global fx on pattern change by @felixroos https://codeberg.org/uzu/strudel/pull/960
-- add debounce to logger by @felixroos https://codeberg.org/uzu/strudel/pull/968
-- fix for transpose(): preserve hap value object structure by @eefano https://codeberg.org/uzu/strudel/pull/966
-- fix: clear hydra on reset by @felixroos https://codeberg.org/uzu/strudel/pull/983
-- little fix for withVal by @eefano https://codeberg.org/uzu/strudel/pull/980
-- fix: share now shares what's visible instead of active by @felixroos https://codeberg.org/uzu/strudel/pull/985
-- Fix pure mini highlight by @yaxu https://codeberg.org/uzu/strudel/pull/994
-- fix: await injectPatternMethods by @felixroos https://codeberg.org/uzu/strudel/pull/1012
-- update undocumented script by @felixroos https://codeberg.org/uzu/strudel/pull/1013
-- eliminate chromium clock jitter by @felixroos https://codeberg.org/uzu/strudel/pull/1004
-- Repl sync fixes by @daslyfe https://codeberg.org/uzu/strudel/pull/1014
-- hotfix for 1017 by @daslyfe https://codeberg.org/uzu/strudel/pull/1020
-- fix cyclist fizzling out by @felixroos https://codeberg.org/uzu/strudel/pull/1046
-- Midi Time hotfix for scheduler updates by @daslyfe https://codeberg.org/uzu/strudel/pull/1047
-- fix: do not reset cc input values on each eval by @felixroos https://codeberg.org/uzu/strudel/pull/1054
-- Fix wchooseCycles not picking the whole pattern by @ilesinge https://codeberg.org/uzu/strudel/pull/1061
-- fix OSC timing for recent scheduler updates by @daslyfe https://codeberg.org/uzu/strudel/pull/1062
-- clarify license by @yaxu https://codeberg.org/uzu/strudel/pull/1064
-- fix failing format test by @daslyfe https://codeberg.org/uzu/strudel/pull/1077
-- fix: url parsing with extra params by @felixroos https://codeberg.org/uzu/strudel/pull/1083
-- fix: csound + dough timing by @felixroos https://codeberg.org/uzu/strudel/pull/1086
-- fix: missing events due to premature worklet cleanup by @felixroos https://codeberg.org/uzu/strudel/pull/1089
-- Use sessionStorage for viewingPatternData and activePattern by @kasparsj https://codeberg.org/uzu/strudel/pull/1091
-- osc: couple of fixes by @kasparsj https://codeberg.org/uzu/strudel/pull/1093
-- web package fixes by @felixroos https://codeberg.org/uzu/strudel/pull/1044
-- Fix audio worklets by @daslyfe https://codeberg.org/uzu/strudel/pull/1114
-- fix: use full repl in web package by @felixroos https://codeberg.org/uzu/strudel/pull/1119
-- [BUG FIX] Audio worklets sometimes dont load by @daslyfe https://codeberg.org/uzu/strudel/pull/1121
+- fix midi issue on firefox and added quote error by @Enelg52 PR #936
+- fix: pianoroll sorting by @felixroos PR #938
+- account for cps in midi time duration by @daslyfe PR #954
+- fix script importable packages (web + repl) by @felixroos PR #957
+- fix: reset global fx on pattern change by @felixroos PR #960
+- add debounce to logger by @felixroos PR #968
+- fix for transpose(): preserve hap value object structure by @eefano PR #966
+- fix: clear hydra on reset by @felixroos PR #983
+- little fix for withVal by @eefano PR #980
+- fix: share now shares what's visible instead of active by @felixroos PR #985
+- Fix pure mini highlight by @yaxu PR #994
+- fix: await injectPatternMethods by @felixroos PR #1012
+- update undocumented script by @felixroos PR #1013
+- eliminate chromium clock jitter by @felixroos PR #1004
+- Repl sync fixes by @daslyfe PR #1014
+- hotfix for 1017 by @daslyfe PR #1020
+- fix cyclist fizzling out by @felixroos PR #1046
+- Midi Time hotfix for scheduler updates by @daslyfe PR #1047
+- fix: do not reset cc input values on each eval by @felixroos PR #1054
+- Fix wchooseCycles not picking the whole pattern by @ilesinge PR #1061
+- fix OSC timing for recent scheduler updates by @daslyfe PR #1062
+- clarify license by @yaxu PR #1064
+- fix failing format test by @daslyfe PR #1077
+- fix: url parsing with extra params by @felixroos PR #1083
+- fix: csound + dough timing by @felixroos PR #1086
+- fix: missing events due to premature worklet cleanup by @felixroos PR #1089
+- Use sessionStorage for viewingPatternData and activePattern by @kasparsj PR #1091
+- osc: couple of fixes by @kasparsj PR #1093
+- web package fixes by @felixroos PR #1044
+- Fix audio worklets by @daslyfe PR #1114
+- fix: use full repl in web package by @felixroos PR #1119
+- [BUG FIX] Audio worklets sometimes dont load by @daslyfe PR #1121
 
 ## New Contributors
 
-- @mhetrick made their first contribution https://codeberg.org/uzu/strudel/pull/941
-- @eefano made their first contribution https://codeberg.org/uzu/strudel/pull/956
-- @Enelg52 made their first contribution https://codeberg.org/uzu/strudel/pull/936
-- @andresgottlieb made their first contribution https://codeberg.org/uzu/strudel/pull/984
-- @cleary made their first contribution https://codeberg.org/uzu/strudel/pull/1068
-- @diegodorado made their first contribution https://codeberg.org/uzu/strudel/pull/1076
-- @lukad made their first contribution https://codeberg.org/uzu/strudel/pull/1104
-- @giohappy made their first contribution https://codeberg.org/uzu/strudel/pull/1116
+- @mhetrick made their first contribution PR #941
+- @eefano made their first contribution PR #956
+- @Enelg52 made their first contribution PR #936
+- @andresgottlieb made their first contribution PR #984
+- @cleary made their first contribution PR #1068
+- @diegodorado made their first contribution PR #1076
+- @lukad made their first contribution PR #1104
+- @giohappy made their first contribution PR #1116
 
 A huge thanks to all contributors!!!
 
@@ -314,4 +308,4 @@ A huge thanks to all contributors!!!
 - @strudel/webaudio@1.1.0
 - @strudel/xen@1.1.0
 
-**Full Changelog**: https://codeberg.org/uzu/strudel/compare/v1.0.0...v1.1.0
+**Full Changelog**: v1.0.0...v1.1.0

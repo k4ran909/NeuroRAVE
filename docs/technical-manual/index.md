@@ -11,13 +11,13 @@ There are different packages for different purposes. They..
 - split up the code into smaller chunks
 - can be selectively used to implement some sort of time based system
 
-Please refer to the individual README files in the [packages folder](https://codeberg.org/uzu/strudel/src/branch/main/packages)
+Please refer to the individual README files in the [packages folder](https://github.com/k4ran909/NeuroRAVE/tree/main/packages)
 
 ## REPL
 
 The [REPL](https://strudel.tidalcycles.org/) is the place where all packages come together to form a live coding system. It can also be seen as a reference implementation for users of the library.
 
-More info in the [REPL README](https://codeberg.org/uzu/strudel/src/branch/main/packages/repl/README.md)
+More info in the [REPL README](https://github.com/k4ran909/NeuroRAVE/blob/main/packages/repl/README.md)
 
 # High Level Overview
 
@@ -25,7 +25,7 @@ More info in the [REPL README](https://codeberg.org/uzu/strudel/src/branch/main/
 
 ## 1. End User Code
 
-The End User Code is written in JavaScript with added syntax sugar. The [eval package](https://github.com/tidalcycles/strudel/tree/main/packages/eval#strudelcycleseval) evaluates the user code
+The End User Code is written in JavaScript with added syntax sugar. The eval package evaluates the user code
 after a transpilation step, which resolves the syntax sugar. If you don't want the syntax sugar, you can omit the eval package and call the native javascript `eval` instead.
 
 ### 🍭 Syntax Sugar
@@ -52,19 +52,19 @@ mini('c3 [e3 g3]')
 
 This is how it works:
 
-<img src="https://github.com/tidalcycles/strudel/blob/talk/talk/public/shiftflow.png?raw=true" width="800" />
+<img src="shiftflow.png" width="800" />
 
 - The user code is parsed with a [shift parser](https://github.com/shapesecurity/shift-parser-js), generating an AST
 - The AST is transformed to resolve the syntax sugar
 - The AST is used to generate code again (shift-codegen)
 
-Shift will most likely be replaced with acorn in the future, see https://github.com/tidalcycles/strudel/issues/174
+Shift will most likely be replaced with acorn in the future, see issue #174
 
 ### Mini Notation
 
 Another important part of the user code is the mini notation, which allows to express rhythms in a short manner.
 
-- the mini notation is [implemented as a PEG grammar](https://github.com/tidalcycles/strudel/blob/main/packages/mini/krill.pegjs), living in the [mini package](https://github.com/tidalcycles/strudel/tree/main/packages/mini)
+- the mini notation is [implemented as a PEG grammar](https://github.com/k4ran909/NeuroRAVE/blob/main/packages/mini/krill.pegjs), living in the [mini package](https://github.com/k4ran909/NeuroRAVE/tree/main/packages/mini)
 - it is based on [krill](https://github.com/Mdashdotdashn/krill) by Mdashdotdashn
 - the peg grammar is used to generate a parser with [peggyjs](https://peggyjs.org/)
 - the generated parser takes a mini notation string and outputs an AST
@@ -186,12 +186,12 @@ Here is an example Hap value with different properties:
 
 At the time of writing this doc, the following outputs are supported:
 
-- Web Audio API `.out()` see [/webaudio](https://github.com/tidalcycles/strudel/tree/main/packages/webaudio)
-- MIDI `.midi()` see [/midi](https://github.com/tidalcycles/strudel/tree/main/packages/midi)
-- OSC `.osc()` see [/osc](https://github.com/tidalcycles/strudel/tree/main/packages/osc)
-- Serial `.serial()` see [/serial](https://github.com/tidalcycles/strudel/tree/main/packages/serial)
-- Tone.js `.tone()` (deprecated?) [/tone](https://github.com/tidalcycles/strudel/tree/main/packages/tone)
-- WebDirt `.webdirt()` (deprecated?) [/webdirt](https://github.com/tidalcycles/strudel/tree/main/packages/webdirt)
-- Speech `.speak()` (experimental) part of [/core](https://github.com/tidalcycles/strudel/tree/main/packages/core)
+- Web Audio API `.out()` see [/webaudio](https://github.com/k4ran909/NeuroRAVE/tree/main/packages/webaudio)
+- MIDI `.midi()` see [/midi](https://github.com/k4ran909/NeuroRAVE/tree/main/packages/midi)
+- OSC `.osc()` see [/osc](https://github.com/k4ran909/NeuroRAVE/tree/main/packages/osc)
+- Serial `.serial()` see [/serial](https://github.com/k4ran909/NeuroRAVE/tree/main/packages/serial)
+- Tone.js `.tone()` (deprecated?) /tone
+- WebDirt `.webdirt()` (deprecated?) /webdirt
+- Speech `.speak()` (experimental) part of [/core](https://github.com/k4ran909/NeuroRAVE/tree/main/packages/core)
 
-These could change, so make sure to check the [packages folder](https://github.com/tidalcycles/strudel/tree/main/packages).
+These could change, so make sure to check the [packages folder](https://github.com/k4ran909/NeuroRAVE/tree/main/packages).

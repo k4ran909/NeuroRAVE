@@ -1,10 +1,6 @@
 # Neuro RAVE
 
 Live coding patterns on the web
-https://strudel.cc/
-
-- Try it here: <https://strudel.cc>
-- Docs: <https://strudel.cc/learn>
 
 ## Running Locally
 
@@ -54,7 +50,7 @@ You can build the standalone desktop application (Neuro RAVE) for Windows using 
 
 This project is organized into many [packages](./packages), which are also available on [npm](https://www.npmjs.com/search?q=%40strudel).
 
-Read more about how to use these in your own project [here](https://strudel.cc/technical-manual/project-start).
+Read more about how to use these in your own project in the technical manual under `technical-manual/project-start`.
 
 You will need to abide by the terms of the [GNU Affero Public Licence v3](LICENSE). As such, Neuro RAVE code can only be shared within free/open source projects under the same license -- see the license for details.
 
@@ -62,7 +58,7 @@ Licensing info for the default sound banks can be found over on the [dough-sampl
 
 ## Contributing
 
-There are many ways to contribute to this project! See [contribution guide](./CONTRIBUTING.md). You can find the full list of contributors [here](https://codeberg.org/uzu/strudel/activity/contributors).
+There are many ways to contribute to this project! See [contribution guide](./CONTRIBUTING.md). You can find the full list of contributors [here](https://github.com/k4ran909/NeuroRAVE/graphs/contributors).
 
 ## Community
 
