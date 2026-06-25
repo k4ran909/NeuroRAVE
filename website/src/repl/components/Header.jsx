@@ -4,6 +4,7 @@ import StopCircleIcon from '@heroicons/react/20/solid/StopCircleIcon';
 import ArrowPathIcon from '@heroicons/react/20/solid/ArrowPathIcon';
 import ShareIcon from '@heroicons/react/20/solid/ShareIcon';
 import BookOpenIcon from '@heroicons/react/20/solid/BookOpenIcon';
+import MusicalNoteIcon from '@heroicons/react/20/solid/MusicalNoteIcon';
 import cx from '@src/cx.mjs';
 import { getAudioContext, getSuperdoughAudioController } from '@strudel/webaudio';
 import { useSettings, setIsZen } from '../../settings.mjs';
@@ -227,6 +228,20 @@ export function Header({ context, embedded = false }) {
             >
               <BookOpenIcon className="w-6 h-6 md:w-5 md:h-5" />
               <span className="hidden md:inline font-medium text-sm">Learn</span>
+            </a>
+          )}
+
+          {!isEmbedded && (
+            <a
+              title="song collection"
+              href={`${baseNoTrailing}/songs/`}
+              className={cx(
+                'p-2 rounded-lg hover:bg-white/10 transition-all flex items-center space-x-2',
+                'hover:text-primary active:scale-95'
+              )}
+            >
+              <MusicalNoteIcon className="w-6 h-6 md:w-5 md:h-5" />
+              <span className="hidden md:inline font-medium text-sm">Collection</span>
             </a>
           )}
         </div>
