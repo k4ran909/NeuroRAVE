@@ -10,7 +10,7 @@ import bundleAudioWorkletPlugin from 'vite-plugin-bundle-audioworklet';
 import tailwind from '@astrojs/tailwind';
 import AstroPWA from '@vite-pwa/astro';
 
-const site = `https://neuro-rave.netlify.app`; // root url without a path
+const site = `https://neurorave.netlify.app`; // root url without a path
 const base = '/'; // base path of the strudel site
 const baseNoTrailing = base.endsWith('/') ? base.slice(0, -1) : base;
 

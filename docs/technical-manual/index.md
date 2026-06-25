@@ -2,7 +2,7 @@ This document introduces you to Strudel in a technical sense.
 
 It is rather out of date, but there might still be useful info below.
 
-If you just want to *use* Strudel, have a look at the [Tutorial](https://strudel.tidalcycles.org/tutorial/).
+If you just want to *use* Strudel, have a look at the Tutorial.
 
 ## Strudel Packages
 
@@ -15,7 +15,7 @@ Please refer to the individual README files in the [packages folder](https://git
 
 ## REPL
 
-The [REPL](https://strudel.tidalcycles.org/) is the place where all packages come together to form a live coding system. It can also be seen as a reference implementation for users of the library.
+The REPL is the place where all packages come together to form a live coding system. It can also be seen as a reference implementation for users of the library.
 
 More info in the [REPL README](https://github.com/k4ran909/NeuroRAVE/blob/main/packages/repl/README.md)
 
